@@ -1,0 +1,76 @@
+body {
+  background-color: #293241;
+  font-family: "Noto Sans JP", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container .btn {
+  padding: 15px 45px;
+  border: 1px solid #52b69a;
+  color: #52b69a;
+  border-radius: 0.5em;
+  display: inline-block;
+  margin-top: 2em;
+  background-color: transparent;
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container .btn:hover {
+  background-color: #52b69a;
+  color: #000;
+}
+
+.container .modal {
+  position: fixed;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 0.5em;
+  top: 50%;
+  left: 50%;
+  color: #000;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #52b69a;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, visibility 0s linear 0.5s;
+  transition: opacity 0.5s, visibility 0s linear 0.5s;
+  z-index: 1;
+}
+
+.container .modal:target {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.container .modal .close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding: 5px;
+  color: #000;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  font-size: 2em;
+  line-height: 1.5;
+  font-weight: 700;
+}
+/*# sourceMappingURL=main.css.map */
